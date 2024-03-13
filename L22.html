@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body {
+            font-family: 'Courier New', Courier, monospace;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            /* hien thi dang cot */
+            flex-direction: column;
+            min-width: 100vh;
+            background-color: azure;
+        }
+        .footer {
+            background-color: chartreuse;
+            color: red;
+            padding: 20px;
+            text-align: center;
+            flex-shrink: 0;
+        }
+        .header  {
+            background-color: aquamarine;
+            color: red;
+            padding: 20px;
+            text-align: center;
+            flex-shrink: 0;
+        }
+        .content {
+            background-color: blanchedalmond;
+            padding: 20px;
+            text-align: center;
+            flex-grow: 1;
+        }
+        .container {
+            position: relative;
+            min-height: 100%;
+        }
+       
+        @media only screen and (max-width: 800px) {
+            .header .content .footer {
+                width: 100%;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <p>Header</p>
+        </div>
+        <div class="content">
+            <h2>Content</h2>
+            <p>Sửa đổi, bổ sung một số điều của Quy định 
+                ban hành kèm theo Quyết định số 18/2022/QĐ-TTg
+                 ngày 02 tháng 8 năm 2022 của Thủ tướng Chính phủ b
+                 an hành Quy định điều kiện, trình tự, thủ tục, hồ sơ xét
+                 , công nhận , công bố và thu hồi quyết định công nhận địa p
+                 hương đạt chuẩn nông thôn mới, đạt chuẩn nông thôn mới nâng 
+                 cao, đạt chuẩn nông thôn mới kiểu mẫu và hoàn thành nhiệm vụ x
+                 ây dựng nông thôn mới giai đoạn 2021 - 2025
+            </p>
+            <img src="download.jpg" alt="aaaa"/>
+        </div>
+        <div class="footer">
+            <h3>Footer</h3>
+            <p>Day la footer</p>
+        </div>
+    </div>
+</body>
+</html>
